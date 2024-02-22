@@ -31,13 +31,7 @@ Home_win refers to a binary outcome where 1 indicates the home team won, and 0 i
 The features we use for predicting the home_win are extracted from our nfl_team, stadiums and spreadspokescores datasets which were merged together. The predictors included in our model are stored in the include_columns variable. Simply put, our data mining goal is to predict whether the home team will win. Notably, the baseline model predicts the home team will win in every game. Therefore, we assess whether our model improves the betting strategy from the baseline model based on accuracy, yearly profitability, and cumulative profitability to compare the model performance both with and without spread scores. 
 
 # Data Description
-Our datasets are sources from Kaggle, and our code is linked in our Appendix. We derive both training and testing datasets, where the training set includes 1228 rows and 135 columns, while the testing set includes 536 rows and 135 columns. Figure 1 (pictured below) is the sample of the training dataset and Figure 2 is the description of the response variables and features. 
-
-Figure 1: Sample Dataset
-![5 rows from the dataset, showing the first 10 columns](appendix/Fig_1.png)
-
-Figure 2: Response Variable and Features Description
-![5 rows from the dataset, showing the last 10 columns](appendix/Fig_2.png)
+Our datasets is from [Kaggle](https://www.kaggle.com/datasets/tobycrabtree/nfl-scores-and-betting-data). We derive both training and testing datasets, where the training set includes 1228 rows and 135 columns, while the testing set includes 536 rows and 135 columns, inlcuding dummy variables for home and away team.
 
 ## Exploratory Data Analysis
 In our exploration of the datasets, we conducted an in-depth analysis of our feature variables concerning our response variable, “home_win”, aiming to comprehend their potential impact on game outcomes and betting predictions. 
@@ -45,17 +39,16 @@ In our exploration of the datasets, we conducted an in-depth analysis of our fea
 ## Key Findings: 
 Stadium Variability: The analysis revealed a diverse range of stadium types with varying elevations including outdoor, indoor, and retractable venues. This highlights potential areas where altitude differences may impact game performance and outcomes. 
 
-![stadium locations on a map of the US](appendix/Fig_5.png)
-
 Weather Factors Impact: Certain weather conditions, such as extreme temperatures or precipitation, showcased correlations between fluctuations in home team performances, indicating potential predictive value. When analyzing weather data, we found that 1085 games were played in temperatures greater than or equal to 75 degrees with the highest temperature reaching 97 degrees. 
 Geographical Influence: Stadium locations and their respective climatic conditions displayed regional variations which might influence team strategies and performance. 
 Home Team Performance: The Pittsburgh Steelers demonstrated the highest number of wins, significantly outperforming other teams. In contrast, the Washington Football Team exhibited the lowest number of home wins among the analyzed teams. 
 
-![home win % by team bar chart](appendix/Fig 9.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/63dd06d8-92fb-4683-8f9d-fc2f016487d5)
 
-![stadium elevation histogram](appendix/Fig 6.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/9f201dae-41e9-4413-a4fd-39a40d813d27)
 
-![home win % by stadium elevation histogram](appendix/Fig 7.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/d1e048ea-a309-4b84-940f-e9fca118ee38)
+
 
 
 Understanding stadium types, elevation effects, and weather conditions provided valuable insights into the diverse factors influencing game outcomes. Incorporating these variables into predictive models holds promise in refining betting strategies and enhancing predictive accuracy.
@@ -95,10 +88,10 @@ We reduced the default parameter value of min_samples_leaf to ten because our da
 
 ## Best Model Interpretation - Random Forest Classifier (Unadjusted) 
 Figure 3: Model Performance (Normal) 	       
-![Model Performance without spread](appendix/Fig_3.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/330ca510-986c-45dc-930d-93520a5a3f1e)
 
 Figure 4: Model Performance (Score Adjusted) 
-![Model Performance without spread](appendix/Fig_4.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/82419226-ceed-46bc-ba88-c3989a0fd7d4)
 
 When comparing our two models between logistic regression and random forest classifier as well as with and without spread adjusting scoring, we can see the random forest classifier model without the spread adjusted scoring performs better for our model. Concerning accuracy, yearly profit, and cumulative profit, our model predicts 61%, $1,530, and $50,500, respectively using the random forest classifier method on the unadjusted model. Ultimately, our model did slightly perform better without the inclusion of spread on the random forest model, but failed to improve when adjusted for spread.  
 
@@ -129,31 +122,31 @@ We believe our model could be improved in a few ways. Firstly, we could add more
 
 # Appendix
 Appendix A: Logit Year by Year Profit (without spread): 
-![Appendix A](appendix/Appendix_A.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/08f7b549-3deb-4707-971e-601f3055b6b1)
 
 Appendix B: Logit Cumulative Profit (without spread): 
-![Appendix B](appendix/Appendix_B.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/09cd2155-b20f-459b-8753-87071e2835ad)
 
 Appendix C: Random Forest Classifier Year by Year Profit (without spread): 
-![Appendix C](appendix/Appendix_C.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/dcbee277-b6ff-474c-815b-8ce225eedec2)
 
 Appendix D: Random Forest Classifier Cumulative Profit (without spread): 
-![Appendix D](appendix/Appendix_D.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/50393715-2788-4518-bf15-7972e109f2fb)
 
 Appendix E: Logit Year by Year Profit (with spread): 
-![Appendix E](appendix/Appendix_E.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/50fac8d1-3439-4a89-a714-911c7e02ed31)
 
 Appendix F: Logit Cumulative Profit (with spread): 
-![Appendix F](appendix/Appendix_F.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/7ae8f425-ecbd-4f73-b1d3-7779befd0317)
 
 Appendix G: Random Forest Classifier Year by Year Profit (with spread):
-![Appendix G](appendix/Appendix_G.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/15e221e5-a57e-4ef0-947a-22d2f351bcd3)
 
 Appendix H: Random Forest Classifier Cumulative Profit (with spread):
-![Appendix H](appendix/Appendix_H.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/a2b6e5fc-637c-4de9-93f7-54c0c46d65a8)
 
 Appendix I: Random Forest Sample Estimator
-![Appendix I](appendix/Appendix_I.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/a7e0ea40-2e94-46dc-b369-6e3e4ba81053)
 
 Appendix J: Variable Importance (Random Forests Model):
-![Appendix J](appendix/Appendix_J.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/c3d17e54-2c19-4997-8ee7-5f726b7f0c8c)
