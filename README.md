@@ -24,7 +24,7 @@ Finally, to calculate profitability, we used the American odds neutral, which is
 Our goal is to help football betters get a better profit on their bet, based on the features in this dataset related to stadium, scoring, and weather-related information. We modeled our strategy using the American odds method, described in our executive summary.
 
 # Data Mining Goal 
-Response Variable: home_win 
+Response Variable:
 Home_win refers to a binary outcome where 1 indicates the home team won, and 0 indicates the home team lost or tied. Ties are extremely rare in the NFL, there have been only 6 games tied since a rule change in 2017.
 
 ## Predictors and Goal: 
