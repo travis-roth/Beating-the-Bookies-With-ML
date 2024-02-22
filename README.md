@@ -156,4 +156,4 @@ Appendix I: Random Forest Sample Estimator
 ![Appendix I](appendix/Appendix_I.png)
 
 Appendix J: Variable Importance (Random Forests Model):
-![Appendix I](appendix/Appendix_J.png)
+![Appendix J](appendix/Appendix_J.png)
