@@ -51,11 +51,11 @@ Weather Factors Impact: Certain weather conditions, such as extreme temperatures
 Geographical Influence: Stadium locations and their respective climatic conditions displayed regional variations which might influence team strategies and performance. 
 Home Team Performance: The Pittsburgh Steelers demonstrated the highest number of wins, significantly outperforming other teams. In contrast, the Washington Football Team exhibited the lowest number of home wins among the analyzed teams. 
 
-![home win % by team bar chart](appendix/Fig_9.png)
+![home win % by team bar chart](appendix/Fig 9.png)
 
-![stadium elevation histogram](appendix/Fig_6.png)
+![stadium elevation histogram](appendix/Fig 6.png)
 
-![home win % by stadium elevation histogram](appendix/Fig_7.png)
+![home win % by stadium elevation histogram](appendix/Fig 7.png)
 
 
 Understanding stadium types, elevation effects, and weather conditions provided valuable insights into the diverse factors influencing game outcomes. Incorporating these variables into predictive models holds promise in refining betting strategies and enhancing predictive accuracy.
