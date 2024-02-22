@@ -34,11 +34,13 @@ The features we use for predicting the home_win are extracted from our nfl_team,
 Our datasets are sources from Kaggle, and our code is linked in our Appendix. We derive both training and testing datasets, where the training set includes 1228 rows and 135 columns, while the testing set includes 536 rows and 135 columns. Figure 1 (pictured below) is the sample of the training dataset and Figure 2 is the description of the response variables and features. 
 
 Figure 1: Sample Dataset
+![5 rows from the dataset, showing the first 10 columns](Fig 1.png)
 
 Figure 2: Response Variable and Features Description
+![5 rows from the dataset, showing the last 10 columns](Fig 2.png)
 
 ## Exploratory Data Analysis
-	In our exploration of the datasets, we conducted an in-depth analysis of our feature variables concerning our response variable, “home_win”, aiming to comprehend their potential impact on game outcomes and betting predictions. 
+In our exploration of the datasets, we conducted an in-depth analysis of our feature variables concerning our response variable, “home_win”, aiming to comprehend their potential impact on game outcomes and betting predictions. 
 
 ## Key Findings: 
 Stadium Variability: The analysis revealed a diverse range of stadium types with varying elevations including outdoor, indoor, and retractable venues. This highlights potential areas where altitude differences may impact game performance and outcomes. 
@@ -82,22 +84,14 @@ We reduced the default parameter value of min_samples_leaf to ten because our da
 
 
 ## Best Model Interpretation - Random Forest Classifier (Unadjusted) 
-
-	
-
 Figure 3: Model Performance (Normal) 	       
+![Model Performance without spread](Fig 3.png)
 
+Figure 4: Model Performance (Score Adjusted) 
+![Model Performance without spread](Fig 4.png)
 
+When comparing our two models between logistic regression and random forest classifier as well as with and without spread adjusting scoring, we can see the random forest classifier model without the spread adjusted scoring performs better for our model. Concerning accuracy, yearly profit, and cumulative profit, our model predicts 61%, $1,530, and $50,500, respectively using the random forest classifier method on the unadjusted model. Ultimately, our model did slightly perform better without the inclusion of spread on the random forest model, but failed to improve when adjusted for spread.  
 
-
-
-
- Figure 4: Model Performance (Score Adjusted) 
-
-
-
-
-When comparing our two models between logistic regression (Appendices A, B, E, and F) and random forest classifier (Appendices C, D, G, and H) as well as with and without spread adjusting scoring, we can see the random forest classifier model without the spread adjusted scoring performs better for our model. Concerning accuracy, yearly profit, and cumulative profit, our model predicts 61%, $1,530, and $50,500, respectively using the random forest classifier method on the unadjusted model. Ultimately, our model did slightly perform better without the inclusion of betting odds on the random forest model, but failed to improve when adjusted for betting odds.  
 # Recommendation 
 In summary, we have the following recommendation for our targeted audience - NFL sports betters: 
 -Use the model to find games where you think the bookie is wrong about the likelihood of a home win.
@@ -124,144 +118,31 @@ We believe our model could be improved in a few ways. Firstly, we could add more
 
 
 # Appendix
-
 Appendix A: Logit Year by Year Profit (without spread): 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Appendix B: Logit Cumulative Profit (without spread): 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Appendix C: Random Forest Classifier Year by Year Profit (without spread): 
-
-
-
-
-
-
-
-
 
 
 Appendix D: Random Forest Classifier Cumulative Profit (without spread): 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Appendix E: Logit Year by Year Profit (with spread): 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Appendix F: Logit Cumulative Profit (with spread): 
 
 
-
-
-
-
-
-
-
-
-
-
 Appendix G: Random Forest Classifier Year by Year Profit (with spread):
-
 
 
 Appendix H: Random Forest Classifier Cumulative Profit (with spread):
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Appendix I: Random Forest Sample Estimator
-Appendix J: EDA
 
-https://colab.research.google.com/drive/1g0yRLL2Ez2hZLjeugFl8sGwFnrXcT4XU?usp=sharing
 
-Appendix K: 
-
-https://colab.research.google.com/drive/13CpkxvwP8SsamRm_EDMyTgeqHC3UHX3R?usp=sharing
-
-Appendix L: 
-
-https://colab.research.google.com/drive/1GWpaFrk3qLmketQ7oghTeyMeS7EP5Pby?usp=sharing
-
-Weather Factors Impact: Certain weather conditions, such as extreme temperatures or precipitation, showcased correlations between fluctuations in home team performances, indicating potential predictive value. When analyzing weather data, we found that 1085 games were played in temperatures greater than or equal to 75 degrees with the highest temperature reaching 97 degrees. 
-Geographical Influence: Stadium locations and their respective climatic conditions displayed regional variations which might influence team strategies and performance. 
-Home Team Performance: The Pittsburgh Steelers demonstrated the highest number of wins, significantly outperforming other teams. In contrast, the Washington Football Team exhibited the lowest number of home wins among the analyzed teams. 
-
-Understanding stadium types, elevation effects, and weather conditions provided valuable insights into the diverse factors influencing game outcomes. Incorporating these variables into predictive models holds promise in refining betting strategies and enhancing predictive accuracy.
-Data Preparation 
-Our data preparation can be explained in two parts. The first part will briefly cover how we constructed our training and testing set step by step. The second part will explain feature engineering techniques conducted by elaborating the features we used for prediction. 
-
-## Next Steps
-We believe our model could be improved in a few ways. Firstly, we could add more data about the team’s composition. For example, we could use the previous year’s data about individual players' performance to calculate a player rating, and then combine these ratings into a team rating. This could give the model a more accurate understanding of the team it is predicting other than its rolling win count. Another way to improve the model is to use real betting odds instead of the default -110. Given access to this data, we could use the historical odds to evaluate the profitability of bets versus the certainty of the outcome, choosing only the most certain bets to bet on. The NFL is extremely popular, and data collection is improving in accuracy and scope. In the future, machine learning will have an even greater impact in areas like sports betting. Although this project is a good first step at the problem, it is only that: the first step.
-
-![Appendix A](Appendix_A.png)
-![Appendix B](Appendix_B.png)
-![Appendix C](Appendix_C.png)
-![Appendix D](Appendix_D.png)
-![Appendix E](Appendix_E.png)
-![Appendix F](Appendix_F.png)
-
+Appendix J: Variable Importance (Random Forests Model):
