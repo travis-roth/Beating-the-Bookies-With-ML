@@ -44,9 +44,17 @@ In our exploration of the datasets, we conducted an in-depth analysis of our fea
 
 ## Key Findings: 
 Stadium Variability: The analysis revealed a diverse range of stadium types with varying elevations including outdoor, indoor, and retractable venues. This highlights potential areas where altitude differences may impact game performance and outcomes. 
+
+![stadium locations on a map of the US](appendix/Fig_5.png)
+
 Weather Factors Impact: Certain weather conditions, such as extreme temperatures or precipitation, showcased correlations between fluctuations in home team performances, indicating potential predictive value. When analyzing weather data, we found that 1085 games were played in temperatures greater than or equal to 75 degrees with the highest temperature reaching 97 degrees. 
 Geographical Influence: Stadium locations and their respective climatic conditions displayed regional variations which might influence team strategies and performance. 
 Home Team Performance: The Pittsburgh Steelers demonstrated the highest number of wins, significantly outperforming other teams. In contrast, the Washington Football Team exhibited the lowest number of home wins among the analyzed teams. 
+
+![home win % by team](appendix/Fig 9.png)
+![stadium elevation histogram](appendix/Fig_6.png)
+![home win % by stadium elevation histogram](appendix/Fig 7.png)
+
 
 Understanding stadium types, elevation effects, and weather conditions provided valuable insights into the diverse factors influencing game outcomes. Incorporating these variables into predictive models holds promise in refining betting strategies and enhancing predictive accuracy.
 
