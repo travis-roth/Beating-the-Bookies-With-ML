@@ -87,10 +87,10 @@ We reduced the default parameter value of min_samples_leaf to ten because our da
 
 
 ## Best Model Interpretation - Random Forest Classifier (Unadjusted) 
-Figure 3: Model Performance (Normal) 	       
+Figure 3: Model Performance (Normal) 	     		  
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/330ca510-986c-45dc-930d-93520a5a3f1e)
 
-Figure 4: Model Performance (Score Adjusted) 
+Figure 4: Model Performance (Score Adjusted)				
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/82419226-ceed-46bc-ba88-c3989a0fd7d4)
 
 When comparing our two models between logistic regression and random forest classifier as well as with and without spread adjusting scoring, we can see the random forest classifier model without the spread adjusted scoring performs better for our model. Concerning accuracy, yearly profit, and cumulative profit, our model predicts 61%, $1,530, and $50,500, respectively using the random forest classifier method on the unadjusted model. Ultimately, our model did slightly perform better without the inclusion of spread on the random forest model, but failed to improve when adjusted for spread.  
