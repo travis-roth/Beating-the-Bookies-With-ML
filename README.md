@@ -123,31 +123,41 @@ We believe our model could be improved in a few ways. Firstly, we could add more
 
 # Appendix
 Appendix A: Logit Year by Year Profit (without spread): 
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/08f7b549-3deb-4707-971e-601f3055b6b1)
 
 Appendix B: Logit Cumulative Profit (without spread): 
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/09cd2155-b20f-459b-8753-87071e2835ad)
 
 Appendix C: Random Forest Classifier Year by Year Profit (without spread): 
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/dcbee277-b6ff-474c-815b-8ce225eedec2)
 
 Appendix D: Random Forest Classifier Cumulative Profit (without spread): 
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/50393715-2788-4518-bf15-7972e109f2fb)
 
 Appendix E: Logit Year by Year Profit (with spread): 
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/50fac8d1-3439-4a89-a714-911c7e02ed31)
 
 Appendix F: Logit Cumulative Profit (with spread): 
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/7ae8f425-ecbd-4f73-b1d3-7779befd0317)
 
 Appendix G: Random Forest Classifier Year by Year Profit (with spread):
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/15e221e5-a57e-4ef0-947a-22d2f351bcd3)
 
 Appendix H: Random Forest Classifier Cumulative Profit (with spread):
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/a2b6e5fc-637c-4de9-93f7-54c0c46d65a8)
 
-Appendix I: Random Forest Sample Estimator
+Appendix I: Random Forest Sample Estimator:
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/a7e0ea40-2e94-46dc-b369-6e3e4ba81053)
 
 Appendix J: Variable Importance (Random Forests Model):
+
 ![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/assets/155266472/c3d17e54-2c19-4997-8ee7-5f726b7f0c8c)
