@@ -52,7 +52,9 @@ Geographical Influence: Stadium locations and their respective climatic conditio
 Home Team Performance: The Pittsburgh Steelers demonstrated the highest number of wins, significantly outperforming other teams. In contrast, the Washington Football Team exhibited the lowest number of home wins among the analyzed teams. 
 
 ![home win % by team](appendix/Fig 9.png)
+
 ![stadium elevation histogram](appendix/Fig_6.png)
+
 ![home win % by stadium elevation histogram](appendix/Fig 7.png)
 
 
