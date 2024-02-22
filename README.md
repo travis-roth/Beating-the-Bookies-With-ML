@@ -1,5 +1,5 @@
 # Beating-the-Bookies-With-ML
-![image](Beating-the-Bookies-With-ML/Appendix_A.png)
+![image](https://github.com/travis-roth/Beating-the-Bookies-With-ML/Appendix_A.png)
 DEVELOPING A MODEL TO PREDICT WINNERS AND PROFIT ON FOOTBALL BETTING USING THE AMERICAN ODDS METHOD
 Travis Roth, Iman Janoo, Drew Blik, Evelyn Ochoa
 
