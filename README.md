@@ -34,10 +34,10 @@ The features we use for predicting the home_win are extracted from our nfl_team,
 Our datasets are sources from Kaggle, and our code is linked in our Appendix. We derive both training and testing datasets, where the training set includes 1228 rows and 135 columns, while the testing set includes 536 rows and 135 columns. Figure 1 (pictured below) is the sample of the training dataset and Figure 2 is the description of the response variables and features. 
 
 Figure 1: Sample Dataset
-![5 rows from the dataset, showing the first 10 columns](Fig 1.png)
+![5 rows from the dataset, showing the first 10 columns](appendix/Fig_1.png)
 
 Figure 2: Response Variable and Features Description
-![5 rows from the dataset, showing the last 10 columns](Fig 2.png)
+![5 rows from the dataset, showing the last 10 columns](appendix/Fig_2.png)
 
 ## Exploratory Data Analysis
 In our exploration of the datasets, we conducted an in-depth analysis of our feature variables concerning our response variable, “home_win”, aiming to comprehend their potential impact on game outcomes and betting predictions. 
@@ -85,10 +85,10 @@ We reduced the default parameter value of min_samples_leaf to ten because our da
 
 ## Best Model Interpretation - Random Forest Classifier (Unadjusted) 
 Figure 3: Model Performance (Normal) 	       
-![Model Performance without spread](Fig 3.png)
+![Model Performance without spread](appendix/Fig_3.png)
 
 Figure 4: Model Performance (Score Adjusted) 
-![Model Performance without spread](Fig 4.png)
+![Model Performance without spread](appendix/Fig_4.png)
 
 When comparing our two models between logistic regression and random forest classifier as well as with and without spread adjusting scoring, we can see the random forest classifier model without the spread adjusted scoring performs better for our model. Concerning accuracy, yearly profit, and cumulative profit, our model predicts 61%, $1,530, and $50,500, respectively using the random forest classifier method on the unadjusted model. Ultimately, our model did slightly perform better without the inclusion of spread on the random forest model, but failed to improve when adjusted for spread.  
 
@@ -119,30 +119,31 @@ We believe our model could be improved in a few ways. Firstly, we could add more
 
 # Appendix
 Appendix A: Logit Year by Year Profit (without spread): 
-
+![Appendix A](appendix/Appendix_A.png)
 
 Appendix B: Logit Cumulative Profit (without spread): 
-
+![Appendix B](appendix/Appendix_B.png)
 
 Appendix C: Random Forest Classifier Year by Year Profit (without spread): 
-
+![Appendix C](appendix/Appendix_C.png)
 
 Appendix D: Random Forest Classifier Cumulative Profit (without spread): 
-
+![Appendix D](appendix/Appendix_D.png)
 
 Appendix E: Logit Year by Year Profit (with spread): 
-
+![Appendix E](appendix/Appendix_E.png)
 
 Appendix F: Logit Cumulative Profit (with spread): 
-
+![Appendix F](appendix/Appendix_F.png)
 
 Appendix G: Random Forest Classifier Year by Year Profit (with spread):
-
+![Appendix G](appendix/Appendix_G.png)
 
 Appendix H: Random Forest Classifier Cumulative Profit (with spread):
-
+![Appendix H](appendix/Appendix_H.png)
 
 Appendix I: Random Forest Sample Estimator
-
+![Appendix I](appendix/Appendix_I.png)
 
 Appendix J: Variable Importance (Random Forests Model):
+![Appendix I](appendix/Appendix_J.png)
